@@ -1,0 +1,27 @@
+.logo {
+  padding: 20px 0px 10px;
+  div {
+    span {
+      border: 1px solid $logoColor;
+      letter-spacing: 8px;
+      padding: 0px 4px;
+    }
+    span:first-child {
+      background-color: $logoColor;
+    }
+    span:last-child {
+      color: $logoColor;
+    }
+  }
+  hr {
+    color: black;
+    height: 2px;
+    width: 200px;
+    margin: 5px auto;
+    background: $paleWhite;
+    border-radius: 2px;
+  }
+  p {
+    font-size: 12px;
+  }
+}

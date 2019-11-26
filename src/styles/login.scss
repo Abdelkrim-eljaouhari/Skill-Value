@@ -1,0 +1,52 @@
+//Global wrapper
+.Login-page {
+  height: 100vh;
+  background-image: url('../images/code.jpg');
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.Login-page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0040857a;
+}
+// Centered box wrapper
+.form-wrapper-box {
+  width: 500px;
+  height: 600px;
+  position: relative;
+}
+
+section {
+  background-color: $paleWhite;
+  height: 300px;
+  padding: 20px;
+  form {
+    a {
+      font-size: 12px;
+    }
+    .form-group {
+      position: relative;
+      span.login-input-icons {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        @extend %translate-center;
+        color: black;
+      }
+      input.login-input {
+        padding-left: 40px;
+      }
+    }
+  }
+}
+//Override bootstrap button color
+.overideBtnColor {
+  background-color: $logoColor;
+}
