@@ -8,19 +8,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
 }
-
 /*------Colors------*/
 $logoColor: #f7bc2f;
 $paleWhite: #ffffff78;
-/*---centering---*/
-.form-wrapper-box {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 20;
-  font-family: 'Montserrat', sans-serif;
-}
-
 /*--Centering ---*/
 %translate-center {
   transform: translate(-50%, -50%);

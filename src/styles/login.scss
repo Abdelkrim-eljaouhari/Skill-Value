@@ -20,7 +20,12 @@
 .form-wrapper-box {
   width: 500px;
   height: 600px;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
+  @extend %translate-center;
 }
 
 section {
