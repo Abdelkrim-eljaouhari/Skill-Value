@@ -1,0 +1,33 @@
+/*--nav bar --*/
+nav.navbar {
+  padding: 0px 35px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+div.left-side p {
+  color: white;
+}
+
+div.right-side {
+  background-color: $light-grey;
+  height: 100px;
+  width: 300px;
+  padding: 0px 10px;
+  @include flexItem(row, center, space-between);
+  p {
+    margin: 0;
+    color: white;
+  }
+  p + p {
+    font-size: $smSize;
+    text-align: left;
+    color: $paleWhite;
+  }
+  span.avatar {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+  }
+}

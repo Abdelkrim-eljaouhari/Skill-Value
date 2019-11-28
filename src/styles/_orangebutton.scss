@@ -1,0 +1,9 @@
+.orange-btn {
+  background-color: $bg-main-btn;
+  font-weight: 900;
+  padding: 2px 20px;
+  width: 240px;
+  .main-btn-inner-span {
+    margin-left: 8px;
+  }
+}

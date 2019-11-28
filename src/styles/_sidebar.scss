@@ -1,0 +1,27 @@
+aside.sidebar-wrapper {
+  width: 240px;
+  float: left;
+  height: 100vh;
+  overflow: hidden;
+  padding: 20px;
+  border-right: 1px solid $light-grey;
+  position: sticky;
+  top: 101px;
+  @include flexItem(column, center, space-between);
+  a {
+    border: none;
+    color: black;
+  }
+  hr {
+    height: 4px;
+    width: 100px;
+    margin-bottom: 150px;
+    background-color: $paleWhite;
+  }
+}
+
+/*---Selected ---*/
+.active {
+  font-size: bold;
+  color: #f7bc2f;
+}

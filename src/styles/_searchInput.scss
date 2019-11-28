@@ -1,0 +1,20 @@
+div.search-input-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+  input.search-input {
+    border: 1px solid lightgrey;
+    padding: 5px 12px;
+    width: 100%;
+  }
+
+  input.search-input:focus {
+    border-color: #f7bc2f;
+    outline: none;
+  }
+  span.inner-span {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    @extend %translate-center;
+  }
+}

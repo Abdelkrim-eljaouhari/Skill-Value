@@ -7,15 +7,77 @@ body {
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
+  overflow: hidden;
 }
+
 /*------Colors------*/
 $logoColor: #f7bc2f;
 $paleWhite: #ffffff78;
+$light-grey: #6c757d;
+$bg-main-page: #f5f5f5;
+$bg-main-btn: #f7bc2f;
+$table-color: #ffffff85;
+/*---*/
+a:hover {
+  text-decoration: none;
+}
+section.main-page {
+  width: calc(100% - 240px);
+  height: 100vh;
+  float: left;
+  background-color: $bg-main-page;
+}
+button {
+  border: none;
+  background-color: none;
+}
+/*--Bootstrap container --*/
+.container {
+  box-sizing: default;
+}
+
+/*--First-row --*/
+.row-mg {
+  margin-top: 15px;
+}
+/*--Normalize hr line --*/
+hr.line {
+  background-color: #a09f9f0d;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+/*--flex --*/
+@mixin flexItem($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
 /*--Centering ---*/
 %translate-center {
   transform: translate(-50%, -50%);
 }
+/*---Fonts size---*/
+$smSize: 12px;
+
+/*--Tables --*/
+table,
+input,
+div.aside-list-wrapper {
+  background-color: $table-color;
+}
+
 /*---Border ---*/
 
-@import './login.scss';
-@import './logo.scss';
+@import 'login';
+@import 'logo';
+@import 'dashborad';
+@import 'navbar';
+@import 'sidebar';
+@import 'orangebutton';
+@import 'toptest';
+@import 'title';
+@import 'campagne';
+@import 'searchInput';
+@import 'asidelist';

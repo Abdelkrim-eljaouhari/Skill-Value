@@ -1,0 +1,19 @@
+header.title-header-wrapper {
+  margin-top: 20px;
+  hr {
+    margin-top: 30px;
+  }
+  div.title-header {
+    @include flexItem(row, flex-start, space-between);
+    h2.menu-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    div.title-btns {
+      @include flexItem(row, center, space-between);
+      .orange-btn {
+        margin-left: 15px;
+      }
+    }
+  }
+}

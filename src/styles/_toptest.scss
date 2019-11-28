@@ -1,0 +1,17 @@
+div.top-test {
+  text-align: left;
+  h4 {
+    color: $paleWhite;
+    margin-bottom: 20px;
+  }
+  div.top-test-btns {
+    @include flexItem(row, center, space-between);
+    margin-bottom: 30px;
+    button {
+      flex-grow: 1;
+      &:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+}
