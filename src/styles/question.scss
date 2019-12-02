@@ -1,0 +1,15 @@
+div.question-wrapper {
+  @include flexItem(column, center, center);
+
+  height: 100vh;
+  .questions {
+    height: 380px;
+    width: 756px;
+    .question-span {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      @include flexItem(column, center, center);
+    }
+  }
+}

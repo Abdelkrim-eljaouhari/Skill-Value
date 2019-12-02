@@ -1,0 +1,26 @@
+form .add-contact-table {
+  padding: 20px;
+  @include flexItem(row, center, space-between);
+  .fildset {
+    position: relative;
+    .small-title {
+      display: inline-block;
+      position: absolute;
+      top: -9px;
+      left: 20px;
+      background-color: white;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+  .add-condidate-input {
+    &:first-child {
+      border-color: #dc3545;
+      width: 95%;
+    }
+    width: 20%;
+    padding: 4px 6px;
+    border: 1px solid $light-grey;
+    border-radius: 3px;
+  }
+}

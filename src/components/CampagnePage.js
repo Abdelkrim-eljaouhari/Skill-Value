@@ -8,16 +8,19 @@ class CampagnePage extends Component {
   state = {};
   render() {
     return (
-      <div className="campagne-wrapper">
+      <div className="campagne-wrapper wrapper">
         <Navbar />
         <Sidebar />
         <section className="main-page">
-          <div className="container-fluid">
+          <div className="container-fluid ">
             <div className="row">
-              <Title menuTitle="Campagne" />
+              <Title
+                menuTitle="Campagne"
+                btnsNumber={[['Nouvelle campagne', 'fas fa-search']]}
+              />
             </div>
             <div className="row row-mg">
-              <div className="col-lg-9">
+              <div className="col-lg-12 col-xl-9">
                 {/*----table ----*/}
 
                 <table class="table table-borderless">
@@ -40,7 +43,7 @@ class CampagnePage extends Component {
 
                 {/*----table ----*/}
               </div>
-              <div className="col-lg-3">
+              <div className="col-lg-12 col-xl-3">
                 <aside className="aside-lists">
                   <SearchInput
                     title="Que souhaitez évaluer ?"

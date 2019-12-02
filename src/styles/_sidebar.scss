@@ -10,7 +10,6 @@ aside.sidebar-wrapper {
   @include flexItem(column, center, space-between);
   a {
     border: none;
-    color: black;
   }
   hr {
     height: 4px;
@@ -21,7 +20,7 @@ aside.sidebar-wrapper {
 }
 
 /*---Selected ---*/
-.active {
-  font-size: bold;
+.selected {
+  font-weight: bold;
   color: #f7bc2f;
 }

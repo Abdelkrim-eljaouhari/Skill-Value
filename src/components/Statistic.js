@@ -2,21 +2,27 @@ import React from 'react';
 import Orangebutton from './Orangebutton';
 const Statistic = () => {
   return (
-    <div className="list-group">
+    <div className="list-group flex-column-r">
       <a href="#" className="list-group-item list-group-item-action ">
-        <h5 className="">Hello world</h5>
-        <p>color</p>
+        <p>work</p>
+        <small className="text-muted">With faded secondary text</small>
       </a>
       <a href="#" className="list-group-item list-group-item-action">
-        Dapibus ac facilisis in
+        <p>work</p>
+        <small className="text-muted">With faded secondary text</small>
       </a>
       <a href="#" className="list-group-item list-group-item-action">
-        Morbi leo risus
+        <p>work</p>
+        <small class="text-muted">With faded secondary text</small>
       </a>
       <a href="#" className="list-group-item list-group-item-action">
-        Porta ac consectetur ac
+        <p>work</p>
+        <small className="text-muted">With faded secondary text</small>
       </a>
-      <a href="#" className="list-group-item list-group-item-action">
+      <a
+        href="#"
+        className="list-group-item list-group-item-action display-block-r"
+      >
         <Orangebutton title="Acheter des Crédits" />
       </a>
     </div>

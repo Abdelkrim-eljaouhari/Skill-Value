@@ -6,6 +6,7 @@ import CampagnePage from './CampagnePage';
 import TestPage from './TestPage';
 import CandidatPage from './CandidatPage';
 import ResultPage from './ResultPage';
+import QuestionPage from './QuestionPage';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/result">
             <ResultPage />
+          </Route>
+          <Route path="/question">
+            <QuestionPage />
           </Route>
         </Switch>
       </Router>

@@ -4,31 +4,45 @@ const Sidebar = () => {
   return (
     <aside className="sidebar-wrapper">
       <div className="list-group">
-        <a href="#" className="list-group-item list-group-item-action">
-          <NavLink to="/dashboard" activeClassName="active">
-            Dashboard
-          </NavLink>
-        </a>
-        <a href="#" className="list-group-item list-group-item-action">
-          <NavLink to="/campagne" activeClassName="active">
-            Campagnes
-          </NavLink>
-        </a>
-        <a href="#" className="list-group-item list-group-item-action">
-          <NavLink to="/test" activeClassName="active">
-            Tests
-          </NavLink>
-        </a>
-        <a href="#" className="list-group-item list-group-item-action">
-          <NavLink to="/candidat" activeClassName="active">
-            Candidats
-          </NavLink>
-        </a>
-        <a href="#" className="list-group-item list-group-item-action">
-          <NavLink to="/result" activeClassName="active">
-            Results
-          </NavLink>
-        </a>
+        <NavLink
+          to="/dashboard"
+          activeClassName="selected"
+          className="list-group-item list-group-item-action"
+        >
+          Dashboard
+        </NavLink>
+
+        <NavLink
+          to="/campagne"
+          activeClassName="selected"
+          className="list-group-item list-group-item-action"
+        >
+          Campagnes
+        </NavLink>
+
+        <NavLink
+          to="/test"
+          activeClassName="selected"
+          className="list-group-item list-group-item-action"
+        >
+          Tests
+        </NavLink>
+
+        <NavLink
+          to="/candidat"
+          activeClassName="selected"
+          className="list-group-item list-group-item-action"
+        >
+          Candidats
+        </NavLink>
+
+        <NavLink
+          to="/result"
+          activeClassName="selected"
+          className="list-group-item list-group-item-action"
+        >
+          Results
+        </NavLink>
       </div>
       <hr />
     </aside>

@@ -31,7 +31,15 @@ article {
   }
 }
 aside.top-test-wrapper {
-  height: 530px;
+  height: 530px; // this will be height auto
   background-color: $light-grey;
   padding: 10px;
+}
+
+/* -- background images in dashboard */
+.card-body:first-child {
+  background-image: url('../images/campagneChart.PNG');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

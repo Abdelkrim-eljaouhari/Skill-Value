@@ -24,10 +24,12 @@ div.right-side {
     text-align: left;
     color: $paleWhite;
   }
-  span.avatar {
-    height: 50px;
-    width: 50px;
-    background-color: white;
-    border-radius: 50%;
-  }
+}
+
+/* commun with questionPage */
+span.avatar {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
 }
