@@ -11,15 +11,33 @@ class QuestionPage extends Component {
   render() {
     return (
       <div className="question-wrapper">
-        <div className="questions shadow-lg p-3 mb-5 bg-white rounded">
+        <div className="questions-inner-wrapper shadow-lg  mb-5 bg-white rounded">
           <header>
-            <div className="lef-side-question">
+            <div className="question">
               <span className="avatar question-span">1</span>
+              <span>What is CSS ?</span>
             </div>
-            <div className="right-side-question"></div>
           </header>
+          <hr className="line" />
           <section>
-            <ul className="suggestions"></ul>
+            <ul className="suggestions">
+              <li>
+                <input type="radio" name="answer" value="first" />
+                <span>It is cascading style sheet</span>
+              </li>
+              <li>
+                <input type="radio" name="answer" value="second" />
+                <span>It is a machine system</span>
+              </li>
+              <li>
+                <input type="radio" name="answer" value="third" />
+                <span>It is a style </span>
+              </li>
+              <li>
+                <input type="radio" name="answer" value="four" />
+                <span>Nothing of the above</span>
+              </li>
+            </ul>
           </section>
         </div>
       </div>

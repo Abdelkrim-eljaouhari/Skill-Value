@@ -5,11 +5,11 @@ const Toptest = () => {
     <div className="top-test">
       <h4>Top tests</h4>
       <div className="top-test-btns">
-        <button type="button" class="btn btn-warning">
+        <button type="button" className="btn btn-warning">
           Mes tests
         </button>
 
-        <button type="button" class="btn btn-outline-warning">
+        <button type="button" className="btn btn-outline-warning">
           Test SkillValue
         </button>
       </div>

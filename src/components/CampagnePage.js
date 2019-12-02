@@ -5,7 +5,6 @@ import Title from './Title';
 import SearchInput from './SearchInput';
 import AsideList from './AsideList';
 class CampagnePage extends Component {
-  state = {};
   render() {
     return (
       <div className="campagne-wrapper wrapper">
@@ -23,7 +22,7 @@ class CampagnePage extends Component {
               <div className="col-lg-12 col-xl-9">
                 {/*----table ----*/}
 
-                <table class="table table-borderless">
+                <table className="table table-borderless">
                   <thead>
                     <tr>
                       <th scope="col">Nom</th>

@@ -10,11 +10,11 @@ body {
 }
 
 /*------Colors------*/
-$logoColor: #f7bc2f;
+$logoColor: #fc9502;
 $paleWhite: #ffffff78;
 $light-grey: #6c757d;
 $bg-main-page: #f5f5f5;
-$bg-main-btn: #f7bc2f;
+$bg-main-btn: #fc9502;
 $table-color: #ffffff85;
 $thead-color: #d8cccc42;
 /*---*/
@@ -31,6 +31,10 @@ section.main-page {
 button {
   border: none;
   background-color: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 /*--Bootstrap container --*/
 .container {

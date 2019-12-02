@@ -1,15 +1,17 @@
 aside.sidebar-wrapper {
   width: 240px;
   float: left;
-  height: 100vh;
+  height: calc(100vh - 100px);
   overflow: hidden;
   padding: 20px;
-  border-right: 1px solid $light-grey;
   position: sticky;
   top: 101px;
   @include flexItem(column, center, space-between);
   a {
     border: none;
+    i {
+      margin-right: 4px;
+    }
   }
   hr {
     height: 4px;
@@ -19,8 +21,21 @@ aside.sidebar-wrapper {
   }
 }
 
+.control-sidebar {
+  bottom: 43%;
+  right: 4px;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #add8e626;
+  cursor: pointer;
+
+  i {
+    font-size: 15px;
+  }
+}
 /*---Selected ---*/
 .selected {
   font-weight: bold;
-  color: #f7bc2f;
+  color: $bg-main-btn;
 }
+/*--close open  side bar --*/

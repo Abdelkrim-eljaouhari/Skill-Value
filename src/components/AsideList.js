@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class AsideList extends Component {
-  state = {};
   render() {
     const { listTitle } = this.props;
     return (

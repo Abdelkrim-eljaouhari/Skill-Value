@@ -4,6 +4,9 @@
   padding: 2px 0px;
   width: 240px;
   box-sizing: content-box;
+  &:hover {
+    opacity: 0.8;
+  }
   .main-btn-inner-span {
     margin-left: 8px;
   }

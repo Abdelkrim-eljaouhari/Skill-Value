@@ -37,12 +37,12 @@ class DashboardPage extends Component {
                     <Statistic />
                   </header>
                   <article className="col-lg-6 col-lg-12">
-                    <div class="card">
+                    <div className="card">
                       <div className="card-body"></div>
                     </div>
                   </article>
                   <article className="col-lg-6 col-lg-12">
-                    <div class="card">
+                    <div className="card">
                       <div className="card-body"></div>
                     </div>
                   </article>

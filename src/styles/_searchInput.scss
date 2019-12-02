@@ -8,7 +8,7 @@ div.search-input-wrapper {
   }
 
   input.search-input:focus {
-    border-color: #f7bc2f;
+    border-color: $bg-main-btn;
     outline: none;
   }
   span.inner-span {

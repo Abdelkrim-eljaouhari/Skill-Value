@@ -13,7 +13,7 @@ const Statistic = () => {
       </a>
       <a href="#" className="list-group-item list-group-item-action">
         <p>work</p>
-        <small class="text-muted">With faded secondary text</small>
+        <small className="text-muted">With faded secondary text</small>
       </a>
       <a href="#" className="list-group-item list-group-item-action">
         <p>work</p>

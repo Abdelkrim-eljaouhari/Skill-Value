@@ -15,3 +15,13 @@ div.top-test {
     }
   }
 }
+// overriding bootstrap
+
+.btn-warning {
+  background-color: $bg-main-btn;
+}
+
+.btn-outline-warning:hover {
+  background-color: $bg-main-btn;
+  color: white;
+}
