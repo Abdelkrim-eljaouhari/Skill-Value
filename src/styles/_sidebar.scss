@@ -3,12 +3,14 @@ aside.sidebar-wrapper {
   float: left;
   height: calc(100vh - 100px);
   overflow: hidden;
+  min-height: 400px;
   padding: 20px;
   position: sticky;
   top: 101px;
   @include flexItem(column, center, space-between);
   a {
     border: none;
+    text-align: left;
     i {
       margin-right: 4px;
     }

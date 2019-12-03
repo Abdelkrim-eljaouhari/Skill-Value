@@ -7,7 +7,7 @@ const Navbar = () => {
         <Logo />
       </div>
       <div className="right-side">
-        <span>
+        <span className="display-n-r">
           <p>Welcome back member</p>
           <p> Pyxicom company</p>
         </span>
