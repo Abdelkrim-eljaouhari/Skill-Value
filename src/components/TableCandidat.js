@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import uuid from 'uuid';
+
 class TableCandidat extends Component {
   constructor(props) {
     super(props);
@@ -38,10 +40,11 @@ class TableCandidat extends Component {
           } = item;
 
           return (
-            <tr>
+            <tr key={uuid()}>
               <th scope="row">
                 {isN_checkbox[0] ? (
                   <div>
+                    {/*--can not be here error--*/}
                     <input
                       nom="checkbox"
                       type="checkbox"

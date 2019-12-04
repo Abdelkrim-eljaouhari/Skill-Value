@@ -7,6 +7,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /*------Colors------*/
@@ -17,15 +18,19 @@ $bg-main-page: #f5f5f5;
 $bg-main-btn: #fc9502;
 $table-color: #ffffff85;
 $thead-color: #d8cccc42;
+$transitio-speed: 0.5s;
 /*---*/
 a:hover {
   text-decoration: none;
+}
+.hero-section {
+  display: flex;
+  transition: margin $transitio-speed ease-in-out;
 }
 section.main-page {
   width: calc(100% - 240px);
   min-height: 100vh;
   height: 100%;
-  float: left;
   background-color: $bg-main-page;
 }
 button {
@@ -72,7 +77,16 @@ input,
 div.aside-list-wrapper {
   background-color: $table-color;
 }
+/*---toggling --*/
 
+.hide_side_bar {
+  margin-left: -199px;
+
+  div.control-sidebar {
+    background-color: #00000045;
+    color: white;
+  }
+}
 /*---Border ---*/
 
 @import 'login';

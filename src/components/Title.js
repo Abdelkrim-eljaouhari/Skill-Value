@@ -9,8 +9,10 @@ const Title = ({ menuTitle, btnsNumber }) => {
             <h2 className="menu-title">{menuTitle}</h2>
           </div>
           <div className="title-btns">
-            {btnsNumber.map(item => {
-              return <Orangebutton title={item[0]} iconClassName={item[1]} />;
+            {btnsNumber.map((item, i) => {
+              return (
+                <Orangebutton key={i} title={item[0]} iconClassName={item[1]} />
+              );
             })}
           </div>
         </div>

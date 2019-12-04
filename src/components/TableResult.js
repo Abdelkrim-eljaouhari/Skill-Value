@@ -29,11 +29,11 @@ class TableResult extends Component {
   render() {
     return (
       <tbody>
-        {this.state.tableList.map(item => {
+        {this.state.tableList.map((item, i) => {
           const { person, canpagne, détail, score, actions, isDone } = item;
 
           return (
-            <tr>
+            <tr key={i}>
               <th scope="row">
                 <p className="table-colored-element table-two-p">
                   {person.name}

@@ -5,50 +5,61 @@ import SearchInput from './SearchInput';
 import AsideList from './AsideList';
 import Title from './Title';
 import TableTest from './TableTest';
-const TestPage = () => {
+import { connect } from 'react-redux';
+
+const TestPage = props => {
+  const toggleHeroSection = props.state
+    ? 'hero-section show_side_bar'
+    : 'hero-section hide_side_bar';
   return (
     <div className="test-wrapper wrapper">
       <Navbar />
-      <Sidebar />
-      <section className="main-page">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-lg-12 col-xl-9">
-              <Title
-                menuTitle="Tests"
-                btnsNumber={[['Créer un smartquiz', '']]}
-              />
-              {/*----table -----*/}
-              <table className="table table-borderless">
-                <thead className="thead-no-bg">
-                  <tr>
-                    <th scope="col">Titre</th>
-                    <th scope="col">Type</th>
-                    <th scope="col">Catégorie</th>
-                    <th scope="col">Niveau</th>
-                    <th scope="col">Lang</th>
-                  </tr>
-                </thead>
-                <TableTest />
-              </table>
-              {/*----table -----*/}
-            </div>
-            <div className="col-lg-12 col-xl-3">
-              <aside className="aside-lists">
-                <SearchInput
-                  title="Que souhaitez évaluer ?"
-                  iconClassName="fas fa-search"
+      <div className={toggleHeroSection}>
+        <Sidebar />
+        <section className="main-page">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-lg-12 col-xl-9">
+                <Title
+                  menuTitle="Tests"
+                  btnsNumber={[['Créer un smartquiz', '']]}
                 />
-                <AsideList listTitle="Mes test favoris" />
-                <AsideList listTitle="Type de test" />
-                <AsideList listTitle="Catégorie" />
-              </aside>
+                {/*----table -----*/}
+                <table className="table table-borderless">
+                  <thead className="thead-no-bg">
+                    <tr>
+                      <th scope="col">Titre</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Catégorie</th>
+                      <th scope="col">Niveau</th>
+                      <th scope="col">Lang</th>
+                    </tr>
+                  </thead>
+                  <TableTest />
+                </table>
+                {/*----table -----*/}
+              </div>
+              <div className="col-lg-12 col-xl-3">
+                <aside className="aside-lists">
+                  <SearchInput
+                    title="Que souhaitez évaluer ?"
+                    iconClassName="fas fa-search"
+                  />
+                  <AsideList listTitle="Mes test favoris" />
+                  <AsideList listTitle="Type de test" />
+                  <AsideList listTitle="Catégorie" />
+                </aside>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 };
 
-export default TestPage;
+const mapStateToProps = state => {
+  return { state };
+};
+
+export default connect(mapStateToProps)(TestPage);

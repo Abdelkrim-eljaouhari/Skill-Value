@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
+import toggleSideBar from '../redux/actions/toggleSideBar';
+import resizeBar from '../redux/actions/resizeBar';
+
 class Sidebar extends Component {
-  state = {
-    isOpen: true
+  onToggleSideBar = () => {
+    this.props.dispatch(toggleSideBar());
   };
-  onSetSidebar = () => {
-    this.setState({ isOpen: !this.state.isOpen });
-    console.log(this.state.isOpen);
+  componentDidMount = () => {
+    window.addEventListener('resize', () => {
+      if (document.body.clientWidth <= 680) {
+        this.props.dispatch(resizeBar());
+      }
+    });
   };
   render() {
-    const sidebar = this.state.isOpen
-      ? ' sidebar-wrapper opened'
-      : ' sidebar-wrapper closed';
     return (
-      <aside className={sidebar}>
+      <aside className="sidebar-wrapper">
         <div className="list-group">
           <NavLink
             to="/dashboard"
@@ -62,9 +66,13 @@ class Sidebar extends Component {
         </div>
         <div
           className="control-sidebar position-absolute"
-          onClick={this.onSetSidebar}
+          onClick={this.onToggleSideBar}
         >
-          <i className="fas fa-arrow-left"></i>
+          {this.props.state ? (
+            <i className="fas fa-arrow-left"></i>
+          ) : (
+            <i className="fas fa-arrow-right"></i>
+          )}
         </div>
         <hr />
       </aside>
@@ -72,4 +80,8 @@ class Sidebar extends Component {
   }
 }
 
-export default Sidebar;
+const mapStateToProps = state => {
+  return { state };
+};
+
+export default connect(mapStateToProps)(Sidebar);

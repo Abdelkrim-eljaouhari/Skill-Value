@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import uuid from 'uuid';
 class TableTest extends Component {
   constructor(props) {
     super(props);
@@ -41,7 +42,7 @@ class TableTest extends Component {
           } = item;
 
           return (
-            <tr>
+            <tr key={uuid()}>
               <th scope="row">
                 {isN_checkbox[0] ? (
                   <div>
