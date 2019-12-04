@@ -1,5 +1,5 @@
 const initState = true;
-function myReducer(state = true, action) {
+export default (state = initState, action) => {
   switch (action.type) {
     case 'TOGGLE_SIDE_BAR':
       return !state;
@@ -9,6 +9,4 @@ function myReducer(state = true, action) {
     default:
       return state;
   }
-}
-
-export default myReducer;
+};

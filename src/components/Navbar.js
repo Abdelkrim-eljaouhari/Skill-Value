@@ -8,8 +8,8 @@ const Navbar = () => {
       </div>
       <div className="right-side">
         <span className="display-n-r">
-          <p>Welcome back member</p>
-          <p> Pyxicom company</p>
+          <p>Bienvenue Membre</p>
+          <p> By pyxicom</p>
         </span>
         <span className="avatar">
           {/*--- the user picture here as background ---*/}

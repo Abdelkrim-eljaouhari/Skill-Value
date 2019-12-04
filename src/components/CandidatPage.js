@@ -9,13 +9,14 @@ import AddCandidat from './AddCandidat';
 import { connect } from 'react-redux';
 
 const CandidatPage = props => {
-  const toggleHeroSection = props.state
-    ? 'hero-section show_side_bar'
-    : 'hero-section hide_side_bar';
   return (
     <div className="candidat-wrapper wrapper">
       <Navbar />
-      <div className={toggleHeroSection}>
+      <div
+        className={`hero-section ${
+          props.state ? 'show_side_bar' : 'hide_side_bar'
+        }`}
+      >
         <Sidebar />
         <section className="main-page">
           <div className="container-fluid">

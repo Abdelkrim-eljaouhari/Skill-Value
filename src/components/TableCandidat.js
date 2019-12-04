@@ -11,8 +11,8 @@ class TableCandidat extends Component {
           nom: 'Jaadi',
           email: 'a.ajaadi@gmail.com',
           scoreGlobal: 'Moyen',
-          isN_checkbox: [true],
-          isChecked: [false]
+          isN_checkbox: [true]
+          //isChecked: [false]
         },
         {
           prénom: 'Other thing',
@@ -20,8 +20,8 @@ class TableCandidat extends Component {
           email: 'Front End',
           scoreGlobal: 'hard',
 
-          isN_checkbox: [true],
-          isChecked: [false]
+          isN_checkbox: [true]
+          //isChecked: [false]
         }
       ]
     };
@@ -30,14 +30,7 @@ class TableCandidat extends Component {
     return (
       <tbody>
         {this.state.tableList.map(item => {
-          const {
-            prénom,
-            nom,
-            email,
-            scoreGlobal,
-            isN_checkbox,
-            isChecked
-          } = item;
+          const { prénom, nom, email, scoreGlobal, isN_checkbox } = item;
 
           return (
             <tr key={uuid()}>

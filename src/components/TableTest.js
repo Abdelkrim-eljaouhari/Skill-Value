@@ -11,8 +11,8 @@ class TableTest extends Component {
           catégorie: 'Front End',
           niveau: 'Moyen',
           lang: 'flag',
-          isN_checkbox: [true, true],
-          isChecked: [false, false]
+          isN_checkbox: [true, true]
+          //isChecked: [false, false]
         },
         {
           title: 'Other thing',
@@ -20,8 +20,8 @@ class TableTest extends Component {
           catégorie: 'Front ',
           niveau: 'hard',
           lang: 'flag',
-          isN_checkbox: [true, true],
-          isChecked: [false, false]
+          isN_checkbox: [true, true]
+          // isChecked: [false, false]
         }
       ]
     };
@@ -31,15 +31,7 @@ class TableTest extends Component {
     return (
       <tbody>
         {this.state.tableList.map(item => {
-          const {
-            title,
-            type,
-            catégorie,
-            niveau,
-            lang,
-            isN_checkbox,
-            isChecked
-          } = item;
+          const { title, type, catégorie, niveau, lang, isN_checkbox } = item;
 
           return (
             <tr key={uuid()}>

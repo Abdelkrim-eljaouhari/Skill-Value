@@ -14,7 +14,7 @@ function Login() {
               <input
                 type="email"
                 className="form-control login-input"
-                placeholder="Email"
+                placeholder="E-mail "
               />
             </div>
             <div className="form-group">
@@ -24,18 +24,22 @@ function Login() {
               <input
                 type="password"
                 className="form-control login-input"
-                placeholder="Password"
+                placeholder="Le mot de pass"
               />
             </div>
-            <a>Forgot your password</a>
+            <a href="https://www.pyxicom.com/" target="_blank">
+              Forgot your password
+            </a>
             <br />
             <button className="btn btn-primary overideBtnColor">Log in</button>
           </form>
         </section>
         <footer>
-          <span>Don't have an account ?</span>
+          <span>Vous n'avez pas un compte ?</span>
           <span>
-            <a href="#">Sing up</a>
+            <a href="https://www.pyxicom.com/" target="_blank">
+              Sing up
+            </a>
           </span>
         </footer>
       </div>

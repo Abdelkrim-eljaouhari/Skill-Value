@@ -6,19 +6,20 @@ import AsideList from './AsideList';
 import Title from './Title';
 import TableResult from './TableResult';
 import { connect } from 'react-redux';
-
+import uuid from 'uuid';
 class ResultPage extends Component {
   state = {
     asideList: ['Tags', 'Type de test', 'Niveau', 'Statut', 'Tags', 'Periode']
   };
   render() {
-    const toggleHeroSection = this.props.state
-      ? 'hero-section show_side_bar'
-      : 'hero-section hide_side_bar';
     return (
       <div className="result-wrapper wrapper">
         <Navbar />
-        <div className={toggleHeroSection}>
+        <div
+          className={`hero-section ${
+            this.props.state ? 'show_side_bar' : 'hide_side_bar'
+          }`}
+        >
           <Sidebar />
           <section className="main-page">
             <div className="container-fluid">
@@ -52,7 +53,7 @@ class ResultPage extends Component {
                       iconClassName="fas fa-search"
                     />
                     {this.state.asideList.map(item => (
-                      <AsideList key={item} listTitle={item} />
+                      <AsideList key={uuid()} listTitle={item} />
                     ))}
                   </aside>
                 </div>

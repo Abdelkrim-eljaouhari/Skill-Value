@@ -5,6 +5,7 @@
   background-position: center;
   background-size: cover;
   color: white;
+  overflow: hidden;
 }
 
 .Login-page::after {
@@ -18,7 +19,8 @@
 }
 // Centered box wrapper
 .form-wrapper-box {
-  width: 500px;
+  min-width: 370px;
+  width: 30%;
   height: 600px;
   top: 50%;
   left: 50%;

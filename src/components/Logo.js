@@ -8,7 +8,7 @@ export default () => {
         <span>VALUE</span>
       </div>
       <hr />
-      <p>Pyxicom company</p>
+      <p>By pyxicom </p>
     </div>
   );
 };

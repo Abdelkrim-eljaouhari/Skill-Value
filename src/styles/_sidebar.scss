@@ -6,7 +6,7 @@ aside.sidebar-wrapper {
   min-height: 400px;
   padding: 20px;
   position: sticky;
-  top: 101px;
+  top: 100px;
   @include flexItem(column, center, space-between);
   a {
     border: none;

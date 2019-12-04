@@ -8,13 +8,14 @@ import { connect } from 'react-redux';
 
 class DashboardPage extends Component {
   render() {
-    const toggleHeroSection = this.props.state
-      ? 'hero-section show_side_bar'
-      : 'hero-section hide_side_bar';
     return (
       <div className="dashboard-wrapper wrapper">
         <Navbar />
-        <div className={toggleHeroSection}>
+        <div
+          className={`hero-section ${
+            this.props.state ? 'show_side_bar' : 'hide_side_bar'
+          }`}
+        >
           <Sidebar />
           <section className="main-page">
             <div className="container-fluid">

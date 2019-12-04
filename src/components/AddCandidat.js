@@ -5,7 +5,7 @@ class AddCandidat extends Component {
   render() {
     return (
       <form className="add-contatct-form">
-        <table className="table table-borderless add-contact-table">
+        <div className="table table-borderless add-contact">
           <div className="fildset">
             <input className="add-condidate-input" type="text" />
             <span className="small-title">Prénom</span>
@@ -25,7 +25,7 @@ class AddCandidat extends Component {
             title="Créer une campagne"
             iconClassName="fas fa-plus"
           />
-        </table>
+        </div>
       </form>
     );
   }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import SearchInput from './SearchInput';
@@ -8,13 +8,14 @@ import TableTest from './TableTest';
 import { connect } from 'react-redux';
 
 const TestPage = props => {
-  const toggleHeroSection = props.state
-    ? 'hero-section show_side_bar'
-    : 'hero-section hide_side_bar';
   return (
     <div className="test-wrapper wrapper">
       <Navbar />
-      <div className={toggleHeroSection}>
+      <div
+        className={`hero-section ${
+          props.state ? 'show_side_bar' : 'hide_side_bar'
+        }`}
+      >
         <Sidebar />
         <section className="main-page">
           <div className="container-fluid">
