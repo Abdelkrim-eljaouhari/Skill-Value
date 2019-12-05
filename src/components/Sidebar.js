@@ -61,7 +61,7 @@ class Sidebar extends Component {
             className="list-group-item list-group-item-action"
           >
             <i className="fas fa-chart-line" />
-            Results
+            Resultas
           </NavLink>
         </div>
         <div
