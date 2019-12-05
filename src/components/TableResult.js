@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import uuid from 'uuid';
 class TableResult extends Component {
   state = {
     tableList: [
@@ -9,7 +10,7 @@ class TableResult extends Component {
         },
         canpagne: 'Jaadi',
         détail: 'PHP',
-        score: 'Done',
+        score: 'Terminé',
         actions: 'Rapport',
         isDone: true
       },
@@ -20,7 +21,7 @@ class TableResult extends Component {
         },
         canpagne: 'Jaadi',
         détail: 'PHP',
-        score: 'Done',
+        score: 'Terminé',
         actions: 'Rapport',
         isDone: true
       }
@@ -29,11 +30,11 @@ class TableResult extends Component {
   render() {
     return (
       <tbody>
-        {this.state.tableList.map((item, i) => {
+        {this.state.tableList.map(item => {
           const { person, canpagne, détail, score, actions, isDone } = item;
 
           return (
-            <tr key={i}>
+            <tr key={uuid()}>
               <th scope="row">
                 <p className="table-colored-element table-two-p">
                   {person.name}

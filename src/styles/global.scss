@@ -87,7 +87,12 @@ div.aside-list-wrapper {
     color: white;
   }
 }
-/*---Border ---*/
+/*---Background ---*/
+%background-shorthand {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 @import 'login';
 @import 'logo';

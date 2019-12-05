@@ -39,7 +39,5 @@ aside.top-test-wrapper {
 /* -- background images in dashboard */
 .card-body:first-child {
   background-image: url('../images/campagneChart.PNG');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  @extend %background-shorthand;
 }

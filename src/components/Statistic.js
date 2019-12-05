@@ -4,20 +4,20 @@ const Statistic = () => {
   return (
     <div className="list-group flex-column-r">
       <a href="#" className="list-group-item list-group-item-action ">
-        <p>work</p>
-        <small className="text-muted">With faded secondary text</small>
+        <p>Emploi</p>
+        <small className="text-muted">un texte içi</small>
       </a>
       <a href="#" className="list-group-item list-group-item-action">
-        <p>work</p>
-        <small className="text-muted">With faded secondary text</small>
+        <p>Emploi</p>
+        <small className="text-muted">un texte içi</small>
       </a>
       <a href="#" className="list-group-item list-group-item-action">
-        <p>work</p>
-        <small className="text-muted">With faded secondary text</small>
+        <p>Emploi</p>
+        <small className="text-muted">un texte içi</small>
       </a>
       <a href="#" className="list-group-item list-group-item-action">
-        <p>work</p>
-        <small className="text-muted">With faded secondary text</small>
+        <p>Emploi</p>
+        <small className="text-muted">un texte içi</small>
       </a>
       <a
         href="#"

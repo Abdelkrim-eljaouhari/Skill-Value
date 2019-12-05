@@ -28,7 +28,7 @@ function Login() {
               />
             </div>
             <a href="https://www.pyxicom.com/" target="_blank">
-              Forgot your password
+              Mot de passe oublié
             </a>
             <br />
             <button className="btn btn-primary overideBtnColor">Log in</button>

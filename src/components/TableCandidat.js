@@ -18,8 +18,7 @@ class TableCandidat extends Component {
           prénom: 'Other thing',
           nom: 'Quizz',
           email: 'Front End',
-          scoreGlobal: 'hard',
-
+          scoreGlobal: 'difficile',
           isN_checkbox: [true]
           //isChecked: [false]
         }
@@ -31,13 +30,11 @@ class TableCandidat extends Component {
       <tbody>
         {this.state.tableList.map(item => {
           const { prénom, nom, email, scoreGlobal, isN_checkbox } = item;
-
           return (
             <tr key={uuid()}>
               <th scope="row">
                 {isN_checkbox[0] ? (
                   <div>
-                    {/*--can not be here error--*/}
                     <input
                       nom="checkbox"
                       type="checkbox"

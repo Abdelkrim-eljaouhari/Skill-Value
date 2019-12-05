@@ -15,7 +15,7 @@ class TableTest extends Component {
           //isChecked: [false, false]
         },
         {
-          title: 'Other thing',
+          title: 'Autre chose',
           type: 'Quizz',
           catégorie: 'Front ',
           niveau: 'hard',
