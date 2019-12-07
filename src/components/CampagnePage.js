@@ -55,8 +55,8 @@ class CampagnePage extends Component {
                       title="Que souhaitez évaluer ?"
                       iconClassName="fas fa-search"
                     />
-                    <AsideList listTitle="statut" checkbookType="checkbox" />
-                    <AsideList listTitle="Tags" checkbookType="checkbox" />
+                    <AsideList listTitle="statut" checkboxType="checkbox" />
+                    <AsideList listTitle="Tags" checkboxType="checkbox" />
                   </aside>
                 </div>
               </div>
