@@ -38,27 +38,30 @@ class DashboardPage extends Component {
               </div>
               <hr className="line" />
               <div className="row row-mg">
-                <div className=" col-lg-6 col-xl-8 col-md-12 ">
+                <div className=" col-lg-12 col-xl-8 col-md-12 ">
                   <div className="row">
                     <header className="col-lg-12   statistic">
                       <Statistic />
                     </header>
-                    <article className="col-lg-6 col-lg-12">
+                    <article className="col-lg-12 col-lg-12 col-md-12">
                       <div className="card">
                         <div className="card-body"></div>
                       </div>
                     </article>
-                    <article className="col-lg-6 col-lg-12">
+                    <article className="col-lg-12 col-lg-12 col-md-12">
                       <div className="card">
                         <div className="card-body"></div>
                       </div>
                     </article>
                   </div>
                 </div>
-                <div className=" col-lg-6 col-xl-4 col-md-12">
+                <div className=" col-lg-12 col-xl-4 col-md-12">
                   <aside className="top-test-wrapper">
                     <Toptest />
                   </aside>
+                </div>
+                <div className=" col-lg-12 col-xl-8 col-md-12 ">
+                  <div className="row"></div>
                 </div>
               </div>
             </div>
